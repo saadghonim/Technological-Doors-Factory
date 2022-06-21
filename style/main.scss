@@ -1,0 +1,21 @@
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/functions";
+
+//layout
+@import "sass/base/base";
+@import "sass/base/fonts";
+
+//components
+@import "sass/components/about_us";
+@import "sass/components/products";
+@import "sass/components/intro";
+@import "sass/components/gallery";
+@import "sass/components/news";
+
+//pages
+@import "sass/pages/branches";
+
+//layout
+@import "sass/layout/header";
+@import "sass/layout/footer";

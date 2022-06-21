@@ -1,0 +1,159 @@
+// media
+@mixin xxs {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin xs {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin md {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media only screen and (max-width: 1400px) {
+    @content;
+  }
+}
+@mixin min_ {
+  @media only screen and (min-width: 1199px) {
+    @content;
+  }
+}
+@mixin min_xs {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin en {
+  html[dir="ltr"] & {
+    @content;
+  }
+}
+@mixin ar {
+  html[dir="rtl"] & {
+    @content;
+  }
+}
+@mixin owl-nav_ {
+  .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    button.owl-next,
+    button.owl-prev {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 28%;
+      color: #808080;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      &:hover {
+        color: $color_2;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    button.owl-prev {
+      @include ar {
+        right: -40px;
+      }
+      @include en {
+        right: -40px;
+      }
+    }
+    button.owl-next {
+      @include ar {
+        left: -40px;
+      }
+      @include en {
+        left: -40px;
+      }
+    }
+  }
+  @include xs {
+    .owl-nav {
+      display: none;
+    }
+  }
+}
+@mixin title_main {
+  font-size: 25px;
+  color: $color_1;
+  font-weight: 700;
+  margin: 0 auto 80px;
+  text-align: center;
+  &:after {
+    content: " ";
+    width: 31px;
+    height: 2px;
+    background-color: $color_2;
+    display: block;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 15px;
+  }
+}
+
+@mixin angle_ {
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    position: absolute;
+    color: $color_1;
+    top: -11px;
+    font-size: 15px;
+    line-height: 3.273;
+    font-weight: 900;
+    transition: 0.5s;
+    @include ar {
+      left: 15px;
+    }
+    @include en {
+      right: 15px;
+    }
+  }
+  &[aria-expanded="true"]::after {
+    content: "\f106";
+  }
+}
+@mixin dots_ {
+  .owl-dots {
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translatex(-50%);
+    color: $main_color;
+    z-index: 9999;
+    .owl-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: rgb(180, 180, 180);
+      opacity: 0.5;
+      margin-inline-end: 5px;
+    }
+    .active {
+      background-color: $color_2;
+      opacity: 1;
+      transform: scale(1.2);
+      outline: 0;
+    }
+  }
+}

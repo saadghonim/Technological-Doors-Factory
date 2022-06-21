@@ -1,0 +1,79 @@
+.about-us-section {
+  padding: 60px 0 0;
+  margin-bottom: 80px;
+}
+.about-us {
+  position: relative;
+  text-align: start;
+  .content_ {
+    text-align: start;
+    height: 100%;
+    width: 82%;
+    padding-top: 50px;
+    margin-bottom: 110px;
+  }
+}
+.gall_hover {
+  overflow: hidden;
+  // &:hover {
+  //   img {
+  //     transform: scale(1.5);
+  //   }
+  // }
+  img {
+    max-width: 100%;
+    transition: 11s;
+  }
+}
+.title_section-about {
+  font-size: 20px;
+  color: $main_color;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  &::after {
+    content: "";
+    background-image: linear-gradient(
+      0deg,
+      rgb(185, 139, 32) 0%,
+      rgb(226, 193, 96) 100%
+    );
+    width: 70px;
+    height: 3px;
+    display: block;
+    margin-top: 10px;
+  }
+}
+.shape_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.title_about_us {
+  color: $main_color;
+  margin-bottom: 20px;
+}
+
+@include xs {
+  .about-us-section {
+    margin-bottom: 60px;
+  }
+  .about-us {
+    .content_ {
+      width: 100%;
+      padding: 0;
+      padding-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+  .shape_ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    text-align: end;
+    img {
+      width: 50%;
+    }
+  }
+}

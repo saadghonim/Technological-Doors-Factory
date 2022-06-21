@@ -1,0 +1,223 @@
+footer {
+  background-color: $main_color;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  .footer {
+    padding: 100px 0 70px;
+    .logo_f {
+      text-align: start;
+      margin-bottom: 20px;
+      img {
+        width: 175px;
+        height: auto;
+      }
+    }
+  }
+
+  .f_div {
+    .f_btn {
+      font-size: $font_s;
+      font-weight: 700;
+      color: $color_1;
+      margin-bottom: 20px;
+      width: 100%;
+      height: 100%;
+      text-align: start;
+      text-transform: capitalize;
+      cursor: inherit;
+    }
+    .ul_list {
+      text-align: start;
+      width: 87%;
+
+      a,
+      h3 {
+        font-size: $font_s - 2;
+        color: #adadad;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 1.5;
+        transition: 0.5s;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        &:hover {
+          color: $color_1;
+        }
+        i {
+          margin-inline-end: 5px;
+          margin-top: 4px;
+          color: #adadad;
+        }
+      }
+    }
+    .contact-w {
+      li {
+        a,
+        h3 {
+          color: $color_1;
+        }
+      }
+    }
+  }
+}
+.ul_social {
+  display: flex;
+  a {
+    color: #757476;
+    margin-inline-end: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      color: $color_1;
+      transform: translateY(-5px);
+      text-decoration: none;
+    }
+  }
+}
+
+@include min_ {
+  .f_div {
+    .ul_list {
+      display: block;
+    }
+  }
+}
+.group_clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .item-clients {
+    margin-bottom: 30px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@include sm {
+  footer {
+    padding: 0;
+    .shape_f {
+      display: none;
+    }
+    .footer {
+      padding: 60px 0 20px;
+      .logo_f {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .social_media {
+        margin-bottom: 40px;
+      }
+      .ul_social {
+        justify-content: center;
+        li {
+          a {
+            margin: 0 10px;
+          }
+        }
+      }
+      .f_div {
+        position: relative;
+        width: 100%;
+        &::before {
+          content: "\";
+          font-family: "line Awesome Free";
+          font-weight: 900;
+          color: $color_1;
+          font-size: $font_s - 4;
+          position: absolute;
+          top: 2px;
+          width: 20px;
+          @include ar {
+            left: 0px;
+          }
+          @include en {
+            right: 0;
+          }
+        }
+        .f_btn {
+          margin-bottom: 20px;
+        }
+
+        .ul_list {
+          width: 100%;
+
+          a {
+            margin-inline-start: 15px;
+            margin-top: 1px;
+          }
+          li:last-child {
+            margin-bottom: 30px;
+          }
+        }
+        .time {
+          margin-inline-start: 15px;
+        }
+        p {
+          margin-inline-start: 15px;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+.copyright_parant {
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    .copy_t,
+    .tasawk {
+      font-size: 12px;
+      color: $color_1;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+    .tasawk {
+      margin: 0;
+      @extend .copy_t;
+      img {
+        margin-inline-start: 3px;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}
+
+@include xs {
+  .copyright_parant {
+    .copyright {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 15px 0 20px;
+      .copy_t {
+        text-align: center;
+        text-align-last: center;
+        order: 2;
+      }
+      .tasawk {
+        order: 3;
+      }
+      p {
+        margin: 0;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .group_clients {
+    margin-top: 30px;
+  }
+}
