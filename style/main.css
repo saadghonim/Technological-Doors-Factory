@@ -693,7 +693,7 @@ img {
           transition-duration: 0.5s;
 }
 
-.gallery-grid .gall_hover > a:hover::before {
+.gallery-grid .gall_hover > a:hover::before, .gallery-grid .gall_hover > a:focus::before, .gallery-grid .gall_hover > a:active::before {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: scaleX(1);
