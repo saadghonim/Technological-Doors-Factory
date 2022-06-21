@@ -1,12 +1,12 @@
 .intro_section {
   // display: flex;
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 1.2fr;
   grid-template-rows: 1fr;
 }
 .content_parant {
   background-color: $main_color;
-  height: 90%;
+  height: 85%;
   .content_ {
     display: flex;
     flex-direction: column;

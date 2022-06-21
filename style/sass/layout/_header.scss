@@ -51,6 +51,12 @@ nav {
 .hover_submenu {
   position: relative;
   &:hover {
+    > a {
+      color: $color_2;
+    }
+    &::after {
+      color: $color_2;
+    }
     .submenu {
       visibility: visible;
       opacity: 1;
@@ -63,12 +69,14 @@ nav {
     font-weight: 900;
     font-size: 9px;
     position: absolute;
-    top: 12px;
+    top: 16px;
+    color: $color_1;
+    transition: 0.5s;
     @include ar {
-      left: 0px;
+      left: -12px;
     }
     @include en {
-      right: 0px;
+      right: -12px;
     }
   }
   .submenu {
@@ -154,6 +162,13 @@ nav {
     position: relative;
     &::after {
       top: 10px;
+      color: $main_color;
+      @include ar {
+        left: 0px;
+      }
+      @include en {
+        right: 0px;
+      }
     }
     .submenu {
       position: static;

@@ -70,18 +70,18 @@
 
     button.owl-prev {
       @include ar {
-        right: -40px;
+        right: -60px;
       }
       @include en {
-        right: -40px;
+        right: -60px;
       }
     }
     button.owl-next {
       @include ar {
-        left: -40px;
+        left: -60px;
       }
       @include en {
-        left: -40px;
+        left: -60px;
       }
     }
   }

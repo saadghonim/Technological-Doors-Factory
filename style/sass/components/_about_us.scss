@@ -17,6 +17,9 @@
   .gall_hover {
     position: relative;
   }
+  .paragraph_main {
+    margin-bottom: 20px;
+  }
 }
 .icon_content {
   position: absolute;
@@ -27,7 +30,7 @@
   i {
     font-size: 72px;
     color: $color_1;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .title_video {
     font-size: 18px;

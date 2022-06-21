@@ -86,8 +86,8 @@ img {
       to right,
       #e2c160,
       #b98b20,
-      #b98b20,
-      #e2c160
+      #e2c160,
+      #b98b20
     );
     text-decoration: none;
     background-position: 100%;
@@ -180,6 +180,7 @@ img {
     font-size: 20px;
     color: $color_5;
     line-height: 1.6;
+
     a,
     span {
       font-size: 20px;
@@ -190,6 +191,9 @@ img {
       margin-inline-start: 10px;
     }
     a {
+      &:last-of-type {
+        margin-inline-start: 10px;
+      }
       transition: 0.5s;
       margin-inline-end: 10px;
       &:hover {
@@ -202,7 +206,25 @@ img {
     }
   }
 }
-
+@include xs {
+  .breadcrumb-section {
+    .breadcrumb_ {
+      a,
+      span {
+        margin-inline-start: 5px;
+      }
+      a {
+        &:last-of-type {
+          margin-inline-start: 5px;
+        }
+        margin-inline-end: 5px;
+      }
+      .title_main {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
 // preload
 .preload {
   position: fixed;
