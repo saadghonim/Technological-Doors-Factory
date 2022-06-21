@@ -1339,6 +1339,7 @@ html[dir="ltr"] .group_form .position_r .angle_select {
   .list-map {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    gap: 15px;
   }
   .list-map-section {
     margin-bottom: 60px;
