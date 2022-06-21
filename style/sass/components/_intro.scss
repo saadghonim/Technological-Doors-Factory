@@ -47,12 +47,19 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
+    .title_intro {
+      text-align: center;
+    }
+    .paragraph_intro {
+      text-align: center;
+    }
   }
   .content_parant {
     height: 100%;
     .content_ {
       width: 100%;
       padding: 40px 15px;
+      align-items: center;
     }
   }
   .title_intro {

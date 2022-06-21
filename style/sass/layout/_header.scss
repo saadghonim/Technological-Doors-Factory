@@ -120,6 +120,7 @@ nav {
     width: 240px;
     right: -100%;
     z-index: 99;
+    overflow-y: auto;
 
     .ul_nav {
       flex-direction: column;
@@ -151,6 +152,9 @@ nav {
   }
   .hover_submenu {
     position: relative;
+    &::after {
+      top: 10px;
+    }
     .submenu {
       position: static;
       width: auto;

@@ -6,13 +6,26 @@ $(window).on("load", function () {
 const nav_ = document.querySelector("nav");
 const clsoe_menu = document.querySelector(".close_");
 const btn_bars = document.querySelector(".btn_bars");
+const moboverlay = document.querySelector(".moboverlay");
+const body_ = document.querySelector("body");
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~mob-menu~~~~~~~~~
 btn_bars.addEventListener("click", function () {
   nav_.classList.add("open_nav");
+  moboverlay.style.display = "block";
+  body_.classList.add("over_");
 });
 clsoe_menu.addEventListener("click", function () {
   nav_.classList.remove("open_nav");
+  moboverlay.style.display = "none";
+  body_.classList.remove("over_");
 });
+moboverlay.addEventListener("click", function () {
+  nav_.classList.remove("open_nav");
+  moboverlay.style.display = "none";
+  body_.classList.remove("over_");
+});
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $(document).ready(function () {
   if ($(window).width() <= 776) {

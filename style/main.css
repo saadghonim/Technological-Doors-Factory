@@ -63,6 +63,8 @@ img {
   bottom: 0;
   right: 0;
   left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 99;
   overflow: hidden;
@@ -336,6 +338,32 @@ img {
   margin-bottom: 110px;
 }
 
+.about-us-section .gall_hover {
+  position: relative;
+}
+
+.icon_content {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+
+.icon_content i {
+  font-size: 72px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.icon_content .title_video {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+
 .gall_hover {
   overflow: hidden;
 }
@@ -394,6 +422,17 @@ img {
   }
   .shape_ img {
     width: 50%;
+  }
+  .icon_content i {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  .icon_content .title_video {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #ffffff;
   }
 }
 
@@ -575,12 +614,21 @@ img {
         grid-template-columns: repeat(1, 1fr);
     gap: 0;
   }
+  .intro_section .title_intro {
+    text-align: center;
+  }
+  .intro_section .paragraph_intro {
+    text-align: center;
+  }
   .content_parant {
     height: 100%;
   }
   .content_parant .content_ {
     width: 100%;
     padding: 40px 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .title_intro {
     font-size: 24px;
@@ -622,6 +670,7 @@ img {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  overflow: hidden;
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
   -webkit-transition-property: color;
@@ -1436,6 +1485,7 @@ html[dir="ltr"] .hover_submenu::after {
     width: 240px;
     right: -100%;
     z-index: 99;
+    overflow-y: auto;
   }
   nav .ul_nav {
     -webkit-box-orient: vertical;
@@ -1470,6 +1520,9 @@ html[dir="ltr"] .hover_submenu::after {
   }
   .hover_submenu {
     position: relative;
+  }
+  .hover_submenu::after {
+    top: 10px;
   }
   .hover_submenu .submenu {
     position: static;

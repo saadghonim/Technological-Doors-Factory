@@ -13,6 +13,29 @@
     margin-bottom: 110px;
   }
 }
+.about-us-section {
+  .gall_hover {
+    position: relative;
+  }
+}
+.icon_content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  i {
+    font-size: 72px;
+    color: $color_1;
+    margin-bottom: 20px;
+  }
+  .title_video {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $color_1;
+  }
+}
 .gall_hover {
   overflow: hidden;
   // &:hover {
@@ -74,6 +97,19 @@
     text-align: end;
     img {
       width: 50%;
+    }
+  }
+  .icon_content {
+    i {
+      font-size: 32px;
+      color: $color_1;
+      margin-bottom: 5px;
+    }
+    .title_video {
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 700;
+      color: $color_1;
     }
   }
 }
