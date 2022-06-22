@@ -75,7 +75,9 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, "500");
   });
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~end back_top~~~~~~~~~~~~
-});
 
-var $disabledResults = $(".branches_p .js-example-disabled-results");
-$disabledResults.select2();
+  if ($(".js-example-disabled-results").length) {
+    var $disabledResults = $(".branches_p .js-example-disabled-results");
+    $disabledResults.select2();
+  }
+});
