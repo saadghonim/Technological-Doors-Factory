@@ -476,58 +476,62 @@ img {
   margin-bottom: 130px;
 }
 
-.products_img {
-  overflow: hidden;
-}
-
-.products_img img {
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
-  max-width: 100%;
-}
-
-.products_img img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .group_products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.products_content {
+.group_products .products_img {
+  overflow: hidden;
+  width: 50%;
+}
+
+.group_products .products_img img {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  max-width: 100%;
+}
+
+.group_products .products_img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.group_products .products_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: start;
+  width: 50%;
+  -webkit-padding-start: 60px;
+          padding-inline-start: 60px;
 }
 
-.products_content .content_ {
+.group_products .products_content .content_ {
   width: 77%;
 }
 
-.products_content .content_ .title_main {
+.group_products .products_content .content_ .title_main {
   margin-bottom: 20px;
 }
 
-.reverse_ {
+.group_products:nth-last-of-type(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.products_img,
-.products_content {
-  width: 50%;
+.group_products:nth-last-of-type(odd) .products_content {
+  -webkit-padding-start: calc((100% - 1110px) / 2);
+          padding-inline-start: calc((100% - 1110px) / 2);
 }
 
 .p_products {
@@ -535,6 +539,7 @@ img {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-align: start;
 }
 
 @media only screen and (max-width: 991px) {
@@ -554,9 +559,18 @@ img {
         grid-template-rows: repeat(2, 1fr);
     gap: 0px;
   }
-  .products_img,
-  .products_content {
+  .products .group_products .products_content {
+    padding: 0 !important;
+  }
+  .products .group_products .products_content .content_ {
     width: 100%;
+  }
+  .products .group_products .products_img,
+  .products .group_products .products_content {
+    width: 100%;
+  }
+  .products_content {
+    padding: 0 !important;
   }
   .products_content .content_ {
     width: 100%;
