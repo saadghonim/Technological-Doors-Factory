@@ -67,6 +67,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: capitalize;
   font-size: 18px;
   color: $main_color;
   font-weight: 700;
@@ -99,6 +100,7 @@ img {
   font-weight: 700;
   line-height: 1.2;
   color: $color_1;
+  text-transform: capitalize;
 }
 .paragraph_main {
   font-size: 20px;
@@ -203,6 +205,9 @@ img {
     }
     .title_main {
       margin-bottom: 20px;
+      @include en {
+        font-size: 26px;
+      }
     }
   }
 }

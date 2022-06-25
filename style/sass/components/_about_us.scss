@@ -33,6 +33,7 @@
     margin-bottom: 15px;
   }
   .title_video {
+    text-transform: capitalize;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
@@ -56,6 +57,7 @@
   color: $main_color;
   line-height: 1.2;
   margin-bottom: 40px;
+  text-transform: capitalize;
   &::after {
     content: "";
     background-image: linear-gradient(
@@ -72,10 +74,16 @@
 .shape_ {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: -1;
+  @include ar {
+    left: 0;
+  }
+  @include en {
+    right: 0;
+  }
 }
 .title_about_us {
+  text-transform: capitalize;
   color: $main_color;
   margin-bottom: 20px;
 }

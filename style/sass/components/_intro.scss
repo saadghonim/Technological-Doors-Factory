@@ -31,6 +31,9 @@
   text-align: start;
   line-height: 1.2;
   margin-bottom: 20px;
+  @include en {
+    font-size: 44px;
+  }
 }
 .paragraph_intro {
   font-size: 20px;

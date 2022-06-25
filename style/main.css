@@ -95,6 +95,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: capitalize;
   font-size: 18px;
   color: #231f20;
   font-weight: 700;
@@ -120,6 +121,7 @@ img {
   font-weight: 700;
   line-height: 1.2;
   color: #ffffff;
+  text-transform: capitalize;
 }
 
 .paragraph_main {
@@ -245,6 +247,10 @@ img {
 
 .breadcrumb-section .breadcrumb_ .title_main {
   margin-bottom: 20px;
+}
+
+html[dir="ltr"] .breadcrumb-section .breadcrumb_ .title_main {
+  font-size: 26px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -386,6 +392,7 @@ img {
 }
 
 .icon_content .title_video {
+  text-transform: capitalize;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 700;
@@ -407,6 +414,7 @@ img {
   color: #231f20;
   line-height: 1.2;
   margin-bottom: 40px;
+  text-transform: capitalize;
 }
 
 .title_section-about::after {
@@ -422,11 +430,19 @@ img {
 .shape_ {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: -1;
 }
 
+html[dir="rtl"] .shape_ {
+  left: 0;
+}
+
+html[dir="ltr"] .shape_ {
+  right: 0;
+}
+
 .title_about_us {
+  text-transform: capitalize;
   color: #231f20;
   margin-bottom: 20px;
 }
@@ -634,6 +650,10 @@ img {
   text-align: start;
   line-height: 1.2;
   margin-bottom: 20px;
+}
+
+html[dir="ltr"] .title_intro {
+  font-size: 44px;
 }
 
 .paragraph_intro {
@@ -889,11 +909,14 @@ html[dir="ltr"] .news .owl-nav button.owl-next {
   margin-bottom: 10px;
   color: #231f20;
   display: block;
-  text-align: justify;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+html[dir="ltr"] .news_item .anc_news {
+  font-size: 18px;
 }
 
 .news_item .anc_news:hover {
@@ -1064,6 +1087,7 @@ html[dir="ltr"] .news .owl-nav button.owl-next {
   line-height: 1.7;
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
+  text-transform: capitalize;
   display: block;
 }
 
@@ -1704,6 +1728,10 @@ footer .f_div .ul_list h3 i {
 footer .f_div .contact-w li a,
 footer .f_div .contact-w li h3 {
   color: #ffffff;
+}
+
+footer .f_div .contact-w li a:hover {
+  color: #ba8d22;
 }
 
 .ul_social {
