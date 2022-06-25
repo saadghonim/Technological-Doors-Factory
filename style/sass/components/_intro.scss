@@ -52,6 +52,9 @@
     gap: 0;
     .title_intro {
       text-align: center;
+      @include en {
+        font-size: 34px;
+      }
     }
     .paragraph_intro {
       text-align: center;
