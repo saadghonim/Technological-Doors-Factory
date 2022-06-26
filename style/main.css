@@ -446,6 +446,7 @@ html[dir="ltr"] .shape_ {
   }
   .about-us-section .paragraph_main {
     margin-bottom: 30px;
+    text-align-last: center;
   }
   .about-us-section {
     margin-bottom: 60px;
@@ -454,6 +455,7 @@ html[dir="ltr"] .shape_ {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
     width: 100%;
     padding: 0;
     padding-top: 20px;
@@ -640,7 +642,7 @@ html[dir="ltr"] .shape_ {
           justify-content: center;
   height: 100%;
   margin: auto;
-  width: 69%;
+  width: 71%;
   -webkit-padding-start: calc(100% - 1170px / 2);
           padding-inline-start: calc(100% - 1170px / 2);
 }
