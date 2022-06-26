@@ -70,7 +70,7 @@ img {
   text-transform: capitalize;
   font-size: 18px;
   color: $main_color;
-  font-weight: 700;
+  font-weight: 500;
   background-size: 200%;
   transition: 0.5s;
   width: 150px;
@@ -150,7 +150,7 @@ img {
     font-family: "line Awesome Free";
     font-weight: 900;
     font-size: 18px;
-    color: $color_1;
+    color: $main_color;
   }
 }
 .back_top.show {
@@ -214,18 +214,11 @@ img {
 @include xs {
   .breadcrumb-section {
     .breadcrumb_ {
-      a,
-      span {
-        margin-inline-start: 5px;
-      }
-      a {
-        &:last-of-type {
-          margin-inline-start: 5px;
-        }
-        margin-inline-end: 5px;
+      .breadcrumb_path {
+        display: none;
       }
       .title_main {
-        margin-bottom: 15px;
+        font-size: 18px;
       }
     }
   }

@@ -18,7 +18,7 @@
     position: relative;
   }
   .paragraph_main {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 .icon_content {
@@ -61,7 +61,7 @@
   &::after {
     content: "";
     background-image: linear-gradient(
-      0deg,
+      45deg,
       rgb(185, 139, 32) 0%,
       rgb(226, 193, 96) 100%
     );
@@ -89,26 +89,37 @@
 }
 
 @include xs {
+  .title_section-about {
+    &::after {
+      width: 70px;
+      height: 3px;
+      display: block;
+      margin-top: 10px;
+      margin: 10px auto 0;
+    }
+  }
+  .about-us-section {
+    .paragraph_main {
+      margin-bottom: 30px;
+    }
+  }
   .about-us-section {
     margin-bottom: 60px;
   }
   .about-us {
     .content_ {
+      align-items: center;
       width: 100%;
       padding: 0;
       padding-top: 20px;
       margin-bottom: 40px;
     }
   }
+  .btn_about_us {
+    margin: auto;
+  }
   .shape_ {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    text-align: end;
-    img {
-      width: 50%;
-    }
+    display: none;
   }
   .icon_content {
     i {

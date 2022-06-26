@@ -1,5 +1,4 @@
 .intro_section {
-  // display: flex;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   grid-template-rows: 1fr;
@@ -14,7 +13,7 @@
     justify-content: center;
     height: 100%;
     margin: auto;
-    width: 71%;
+    width: 69%;
     padding-inline-start: calc(100% - 1170px / 2);
   }
 }
