@@ -64,6 +64,10 @@
       margin-inline-end: 10px;
       text-transform: capitalize;
       display: block;
+
+      @include en {
+        width: 58px;
+      }
     }
     .angle_select {
       position: absolute;
