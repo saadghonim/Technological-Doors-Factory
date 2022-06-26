@@ -1092,9 +1092,7 @@ html[dir="ltr"] .news_item .anc_news {
   text-transform: capitalize;
   display: block;
 }
-html[dir="ltr"] .group_form .position_r label {
-width: 58px;
-}
+
 
 .group_form .position_r .angle_select {
   position: absolute;
