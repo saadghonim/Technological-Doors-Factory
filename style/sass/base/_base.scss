@@ -68,13 +68,13 @@ img {
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 14px;
   color: $main_color;
   font-weight: 500;
   background-size: 200%;
   transition: 0.5s;
-  width: 150px;
-  height: 50px;
+  width: 140px;
+  height: 45px;
   background-image: linear-gradient(
     to right,
     #b98b20,
@@ -96,7 +96,7 @@ img {
   }
 }
 .title_main {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   color: $color_1;

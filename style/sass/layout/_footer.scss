@@ -7,7 +7,7 @@ footer {
     padding: 100px 0 70px;
     .logo_f {
       text-align: start;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       img {
         width: 175px;
         height: auto;
@@ -30,7 +30,14 @@ footer {
     .ul_list {
       text-align: start;
       width: 87%;
-
+      .group_num {
+        a {
+          &:last-child {
+            margin-inline-start: 19px;
+            display: block;
+          }
+        }
+      }
       a,
       h3 {
         font-size: $font_s - 2;
@@ -65,6 +72,7 @@ footer {
     }
   }
 }
+
 .ul_social {
   display: flex;
   a {
@@ -151,10 +159,16 @@ footer {
 
         .ul_list {
           width: 100%;
-
+          .group_num {
+            a {
+              &:last-child {
+                margin-inline-start: 34px;
+                display: block;
+              }
+            }
+          }
           a {
             margin-inline-start: 15px;
-            width: 70%;
           }
           h3 {
             margin-inline-start: 15px;

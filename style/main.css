@@ -96,14 +96,14 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 14px;
   color: #231f20;
   font-weight: 500;
   background-size: 200%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 150px;
-  height: 50px;
+  width: 140px;
+  height: 45px;
   background-image: -webkit-gradient(linear, left top, right top, from(#b98b20), color-stop(#e2c160), color-stop(#e2c160), to(#b98b20));
   background-image: linear-gradient(to right, #b98b20, #e2c160, #e2c160, #b98b20);
 }
@@ -117,7 +117,7 @@ img {
 }
 
 .title_main {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   color: #ffffff;
@@ -948,8 +948,8 @@ html[dir="ltr"] .news_item .anc_news {
 }
 
 .news_item .news_paragraph {
-  font-size: 16px;
-  height: 60px;
+  font-size: 14px;
+  height: 50px;
   color: #666666;
   font-weight: 400;
   margin-bottom: 20px;
@@ -961,7 +961,7 @@ html[dir="ltr"] .news_item .anc_news {
 }
 
 .anc_more {
-  font-size: 16px;
+  font-size: 14px;
   color: #ababab;
   text-transform: capitalize;
   font-weight: 400;
@@ -1550,7 +1550,7 @@ html[dir="ltr"] .hover_submenu::after {
 
 .hover_submenu .submenu > li a {
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #939393;
 }
@@ -1682,7 +1682,7 @@ footer .footer {
 
 footer .footer .logo_f {
   text-align: start;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 footer .footer .logo_f img {
@@ -1705,6 +1705,12 @@ footer .f_div .f_btn {
 footer .f_div .ul_list {
   text-align: start;
   width: 87%;
+}
+
+footer .f_div .ul_list .group_num a:last-child {
+  -webkit-margin-start: 19px;
+          margin-inline-start: 19px;
+  display: block;
 }
 
 footer .f_div .ul_list a,
@@ -1861,10 +1867,14 @@ footer .f_div .contact-w li a:hover {
   footer .footer .f_div .ul_list {
     width: 100%;
   }
+  footer .footer .f_div .ul_list .group_num a:last-child {
+    -webkit-margin-start: 34px;
+            margin-inline-start: 34px;
+    display: block;
+  }
   footer .footer .f_div .ul_list a {
     -webkit-margin-start: 15px;
             margin-inline-start: 15px;
-    width: 70%;
   }
   footer .footer .f_div .ul_list h3 {
     -webkit-margin-start: 15px;
